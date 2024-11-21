@@ -1,0 +1,46 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.list-item .text {
+    flex-grow: 1;
+    margin-right: 10px;
+    color: #333;
+}
+
+.list-item button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    transition: opacity 0.3s;
+}
+
+.list-item button.edit {
+    background-color: #ffc107;
+    margin-right: 5px;
+}
+
+.list-item button.delete {
+    background-color: #dc3545;
+}
+
+.list-item button:hover {
+    opacity: 0.8;
+}
